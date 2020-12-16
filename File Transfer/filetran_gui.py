@@ -17,6 +17,10 @@ def load_gui(self):
     self.btn_cl = tk.Button(self.master,width=15,height=2,text="Close Program",command=lambda: filetran_func.ask_quit(self))
     self.btn_cl.grid(row=2,column=2,padx=(0,20),pady=(10,10),sticky=E)
 
+    self.btn_cl = tk.Button(self.master,width=15,height=2,text="Check Files",command=lambda: filetran_func.check(self))
+    self.btn_cl.grid(row=2,column=2,padx=(0,20),pady=(10,10),sticky=W)
+
+
     # Source & Destination Paths
     self.src_disp = tk.Entry(self.master, width=50, font=('Helvetica', 10))
     self.src_disp.grid(row=0, column=1, columnspan=2, padx=(0, 20), pady=(40, 0), sticky=N+W)
